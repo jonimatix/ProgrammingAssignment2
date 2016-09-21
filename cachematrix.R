@@ -37,3 +37,10 @@ cacheSolve <- function(x, ...) {
     m
     
 }
+
+# Test execution of the above functions
+mat <- matrix(data = rnorm(9,10), nrow = 3, ncol = 3)
+
+mvec <- makeCacheMatrix(mat)
+
+cacheSolve(mvec)
